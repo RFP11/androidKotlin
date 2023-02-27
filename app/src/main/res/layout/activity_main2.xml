@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/navbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:background="@color/navbar"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Praktek 2"
+            android:textSize="20sp"
+            android:textColor="@color/text"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="NIS: "
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/NIS"
+        app:layout_constraintTop_toBottomOf="@id/navbar" />
+
+    <EditText
+        android:id="@+id/NIS"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#ADADAD"
+        android:hint="Masukan NIS"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text"
+        android:textSize="13sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navbar"
+        tools:ignore="ExtraText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Nama: "
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Nama"
+        app:layout_constraintTop_toBottomOf="@id/NIS" />
+
+    <EditText
+        android:id="@+id/Nama"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#ADADAD"
+        android:hint="Masukan Nama"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text"
+        android:textSize="13sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NIS"
+        tools:ignore="ExtraText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Nilai 1: "
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Nilai1"
+        app:layout_constraintTop_toBottomOf="@id/Nama" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Nilai 2: "
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Nilai2"
+        app:layout_constraintTop_toBottomOf="@id/Nilai1" />
+
+    <EditText
+        android:id="@+id/Nilai2"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#ADADAD"
+        android:hint="Masukan Produktif"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text"
+        android:textSize="13sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nilai1"
+        tools:ignore="ExtraText" />
+
+    <EditText
+        android:id="@+id/Nilai1"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="#ADADAD"
+        android:hint="Masukan Nilai Umum"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text"
+        android:textSize="13sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nama"
+        tools:ignore="ExtraText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plainTeksJumlah"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Jumlah : "
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Nilai2"
+        app:layout_constraintTop_toBottomOf="@id/Nilai2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Jumlah"
+        android:layout_marginTop="18dp"
+        android:text="Jumlah Akan muncul disini"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintLeft_toRightOf="@id/plainTeksJumlah"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nilai2"
+        android:textColor="@color/text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlainTeksKeterangan"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Keterangan: "
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Nilai2"
+        app:layout_constraintTop_toBottomOf="@id/plainTeksJumlah" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Keterangan"
+        android:layout_marginTop="18dp"
+        android:text="Keterangan"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintLeft_toRightOf="@id/PlainTeksKeterangan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plainTeksJumlah"
+        android:textColor="@color/text"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eksekusi2"
+        android:layout_margin="15dp"
+        android:text="Hitung"
+        android:textSize="10sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/bg"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PlainTeksKeterangan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:backgroundTint="@color/bg"
+    android:text="Kembali Ke Menu Utama"
+    android:textColor="@color/text"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.551"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/eksekusi2"
+    app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/praktek31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/bg"
+        android:text="Menuju Ke Praktek selanjutnya"
+        android:textColor="@color/text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
